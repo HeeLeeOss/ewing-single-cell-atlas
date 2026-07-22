@@ -6,7 +6,7 @@ ewing-single-cell-atlas
 
 **Definition of shipped:** A deed is **shipped** when: acceptance criteria met **+** CI green (schema + provenance + license gates) **+** required human/expert sign-off recorded **+** the artifact is actually published to its public home (CELLxGENE collection / download bundle / Zenodo DOI) **and** linked 
 
-This is an **Elyos** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/elyos
+This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
@@ -15,8 +15,8 @@ This is an **Elyos** good-deed project. Contributors pull a task, do it with the
 
 ## Contribute
 ```bash
-elyos browse
-elyos next --repo Elyos-Projects/ewing-single-cell-atlas --no-fork
+hee-lee-oss browse
+hee-lee-oss next --repo Hee-Lee-Oss-Projects/ewing-single-cell-atlas --no-fork
 ```
 
 ## Licensing & review

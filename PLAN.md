@@ -15,7 +15,7 @@
 > This plan treats *data dignity, licensing honesty, and "not medical advice"* as non-negotiable
 > identity constraints, not checkboxes. If a step would risk re-identifying a patient, overstate a
 > finding, or imply clinical guidance, we do not ship it. **When in doubt, we stop and surface the
-> concern.** That posture is the whole point of doing this inside Elyos rather than as an unowned
+> concern.** That posture is the whole point of doing this inside Hee-Lee Oss rather than as an unowned
 > side project.
 
 ---
@@ -85,7 +85,7 @@ until one is confirmed (see §2, §11).
 ### Verified need — **TO BE SECURED**
 There is a strong *inferred* need (the re-work tax is real and widely reported), but **no partner
 research lab, advocacy org, or named beneficiary has confirmed this specific deliverable yet.** Per
-Elyos honesty rules, every task carries **`verifiedNeed = false`** until we secure at least one of:
+Hee-Lee Oss honesty rules, every task carries **`verifiedNeed = false`** until we secure at least one of:
 - a **research-partner** lab that commits to using/reviewing the atlas, **or**
 - a **patient-advocacy partner** (e.g. a Ewing/sarcoma foundation) for the education layer, **or**
 - documented, dated demand signals (issue requests, citations of intent, a letter of support).
@@ -201,9 +201,9 @@ provenance model, and review gates.
 secured. Without them, stage 7 is deferred (not produced).
 
 ### Tech stack
-- **Language/runtime:** Python 3.11 (the single-cell ecosystem standard) for the pipeline; the **Elyos
+- **Language/runtime:** Python 3.11 (the single-cell ecosystem standard) for the pipeline; the **Hee-Lee Oss
   CLI/repo conventions** govern task packaging. *(Note: this is a content/data project, so the
-  TS/ESM/pnpm rule in CLAUDE.md applies to Elyos platform code, not to scientific pipeline code; this
+  TS/ESM/pnpm rule in CLAUDE.md applies to Hee-Lee Oss platform code, not to scientific pipeline code; this
   exception is recorded as a locked decision below.)*
 - **Core libs:** `scanpy`, `anndata`, `cellxgene-schema` (validator), `pandas`, `numpy`; integration via
   `scanpy`/`harmonypy` (deterministic, well-understood) — `scVI` considered but deferred for
@@ -227,7 +227,7 @@ secured. Without them, stage 7 is deferred (not produced).
   annotation does not ship.
 - **L4 — Education layer is `high`-risk and gated.** No family-facing content without oncologist +
   patient-advocate sign-off and "not medical advice" framing. If reviewers aren't secured, it is cut.
-- **L5 — Scientific pipeline is Python; Elyos platform/tooling stays TS/ESM** (recorded CLAUDE.md
+- **L5 — Scientific pipeline is Python; Hee-Lee Oss platform/tooling stays TS/ESM** (recorded CLAUDE.md
   exception, see §16/§17).
 - **L6 — No re-hosting of non-redistributable data.** Link + describe only.
 
@@ -293,7 +293,7 @@ CI-enforced; a release with gaps is blocked.
 - We perform **no linkage, no re-identification, no individual demographic inference.**
 - If any file contains apparent direct/indirect identifiers (donor names, dates beyond year, free-text
   notes, geographic micro-data), it is **quarantined and the source excluded** pending human review.
-- No secrets, tokens, or keys in logs/receipts/commits (Elyos rule).
+- No secrets, tokens, or keys in logs/receipts/commits (Hee-Lee Oss rule).
 
 ### 7.4 Attribution & output licensing
 - **Code/pipeline:** MIT.
@@ -377,7 +377,7 @@ schema-valid example Task JSON. All tasks carry `verifiedNeed = false` until a p
 | **Steward (last-mile owner)** | Ensures releases reach beneficiaries; tracks outcomes | **TBD** |
 | **Partner / requestor** | Research lab and/or advocacy org confirming the need | **NONE — TO BE SECURED** |
 
-Reviewers rotate; no single person approves their own work. Edge cases / scope disputes go to the Elyos
+Reviewers rotate; no single person approves their own work. Edge cases / scope disputes go to the Hee-Lee Oss
 board + community per the good-deed definition's published COI + veto checklist.
 
 ---
@@ -390,7 +390,7 @@ board + community per the good-deed definition's published COI + veto checklist.
 - **Tooling:** `scanpy`, `anndata`, `cellxgene-schema`, `harmonypy`; `conda-lock`/`uv`; DVC or git-LFS;
   GitHub Actions.
 - **Publishing:** CZ CELLxGENE (hosting/browse), Zenodo (DOI archive), GitHub (code + docs).
-- **Elyos platform:** task registry/schema (`packages/schema`), CLI workspace prep + PR flow, governance
+- **Hee-Lee Oss platform:** task registry/schema (`packages/schema`), CLI workspace prep + PR flow, governance
   proposal + COI/veto process, registry entry.
 - **Upstream studies:** the original authors/papers behind each dataset (attribution + provenance).
 
@@ -455,7 +455,7 @@ board + community per the good-deed definition's published COI + veto checklist.
 3. **Redistribution boundary:** for CC-BY-but-ambiguous datasets, do we re-host derivatives or link-only? Default conservative (link) until license is unambiguous.
 4. **Cell-type label authority:** where published labels conflict across studies, what is our tie-break + how do we record disagreement?
 5. **Education layer go/no-go:** do we have credentialed oncologist + advocate reviewers? If not by M4, M5 is formally deferred.
-6. **Pipeline language exception:** confirm with Elyos maintainers that a Python scientific pipeline is acceptable under the TS/ESM convention (recorded as L5; this is the norm for single-cell work).
+6. **Pipeline language exception:** confirm with Hee-Lee Oss maintainers that a Python scientific pipeline is acceptable under the TS/ESM convention (recorded as L5; this is the norm for single-cell work).
 7. **Hosting longevity:** CELLxGENE hosting terms + Zenodo quota for repeated large releases.
 8. **Scope of "program scores":** which published *EWSR1-FLI1*/ETS signatures are citable + license-clean to redistribute as gene lists?
 
@@ -463,7 +463,7 @@ board + community per the good-deed definition's published COI + veto checklist.
 
 ## 17. References
 
-- Elyos: `CLAUDE.md` (work rules, lanes, refusal guardrails); `docs/good-deed-definition.md` (5 criteria
+- Hee-Lee Oss: `CLAUDE.md` (work rules, lanes, refusal guardrails); `docs/good-deed-definition.md` (5 criteria
   + risk tiers); `packages/schema/src/schemas.ts` (Task schema); `planning/ROADMAP.md` (Track 8 cancer
   guardrails + portfolio).
 - Exemplar plan depth: `C:\code\Ofelia\plan.md`. Planning spec: `PLAN_SPEC.md`.
@@ -485,7 +485,7 @@ Twenty-five specific improvements made to the draft above, each already applied 
 4. **Explicit exclude-by-default list** (dbGaP, EGA, TARGET/GDC controlled, biobanks; COSMIC/OncoKB non-commercial) in §5 and §7.1.
 5. **Set `verifiedNeed=false` project-wide** and stated it in the summary, §2, §10, and risk table — honest about the missing partner.
 6. **Added a human "why we are careful" preamble** acknowledging that each row is a child/family — per the prompt's "take real care."
-7. **Defined Definition of Shipped as published-and-linked**, not merged (§8) — matching Elyos "delivered, not merged."
+7. **Defined Definition of Shipped as published-and-linked**, not merged (§8) — matching Hee-Lee Oss "delivered, not merged."
 8. **Made provenance completeness a CI-enforced, release-blocking gate** (100% target, metric #6) rather than aspirational.
 9. **Added a license-segregation rule** so a non-CC-BY upstream term can never contaminate a CC-BY release bundle (§7.4, risk table).
 10. **Recorded the TS/ESM→Python exception explicitly** (L5, §16 Q6) instead of silently violating CLAUDE.md's engineering convention.
@@ -529,7 +529,7 @@ Twenty-five specific improvements made to the draft above, each already applied 
   formal, documented state rather than an implicit one.
 - **Outstanding items requiring a human decision:** secure a partner/beneficiary (unblocks
   `verifiedNeed`); confirm oncologist + patient-advocate reviewers (gates M5); confirm the Python-
-  pipeline exception with Elyos maintainers (§16 Q6).
+  pipeline exception with Hee-Lee Oss maintainers (§16 Q6).
 
 **Sign-off:** Draft is internally consistent and safe to circulate for maintainer + compliance review.
 Not yet approved for execution — execution is blocked until a maintainer and compliance reviewer are

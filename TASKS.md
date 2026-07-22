@@ -8,7 +8,7 @@
 
 ---
 
-## How these tasks map to Elyos
+## How these tasks map to Hee-Lee Oss
 
 Each row below becomes a **Task JSON** validated against `packages/schema/src/schemas.ts`. Field mapping:
 
@@ -243,7 +243,7 @@ Schema-valid (`packages/schema/src/schemas.ts`) Task JSON for the first M0 task.
   "deliverable": "pr",
   "tokenEstimate": "small",
   "status": "open",
-  "context": "New Elyos cancer-research good-deed project to curate and annotate ONLY open-access / aggregate / de-identified public Ewing sarcoma scRNA-seq data. Controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope. No partner/beneficiary is secured yet, so verifiedNeed is false. This first task creates the repository foundation that every later gate (license verification, provenance, schema validation) hangs off of.",
+  "context": "New Hee-Lee Oss cancer-research good-deed project to curate and annotate ONLY open-access / aggregate / de-identified public Ewing sarcoma scRNA-seq data. Controlled-access (dbGaP, EGA, individual-level biobanks) and any identifiable patient data are out of scope. No partner/beneficiary is secured yet, so verifiedNeed is false. This first task creates the repository foundation that every later gate (license verification, provenance, schema validation) hangs off of.",
   "objective": "Scaffold the repository with README, CONTRIBUTING, dual licensing (MIT for code, CC-BY-4.0 for data/docs), a CODEOWNERS/reviewer-roles stub, and a CI skeleton that will later run cellxgene-schema validation plus license and provenance gates.",
   "acceptanceCriteria": [
     "README states scope, the binding cancer guardrails (open-access only; no controlled-access or identifiable data), and 'not medical advice'.",
@@ -254,9 +254,9 @@ Schema-valid (`packages/schema/src/schemas.ts`) Task JSON for the first M0 task.
     "Commit signed off per DCO."
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md",
-    "C:/code/elyos/docs/good-deed-definition.md",
-    "C:/code/elyos/planning/ROADMAP.md (Track 8 cancer guardrails)",
+    "C:/code/hee-lee-oss/CLAUDE.md",
+    "C:/code/hee-lee-oss/docs/good-deed-definition.md",
+    "C:/code/hee-lee-oss/planning/ROADMAP.md (Track 8 cancer guardrails)",
     "https://github.com/chanzuckerberg/single-cell-curation (CELLxGENE schema)"
   ],
   "output": "A pull request adding the repository scaffold (README, CONTRIBUTING, LICENSE files, reviewer-roles stub, CI skeleton) for ewing-single-cell-atlas.",

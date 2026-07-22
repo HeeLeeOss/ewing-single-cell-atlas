@@ -151,7 +151,7 @@ note where it would break (if scope expands to pan-sarcoma or spatial). Converse
 - **Weaknesses/gaps:** Pan-pediatric, **not Ewing-specialized** — no EWSR1-FLI1/ETS program scoring, no
   Ewing-specific annotation vocabulary, no cross-study *integrated* Ewing reference (it's per-sample
   uniform processing, not a fused atlas). Provenance is pipeline-level, not the per-assertion,
-  license-verbatim model Elyos proposes. Re-id/genotype-leakage framing not foregrounded.
+  license-verbatim model Hee-Lee Oss proposes. Re-id/genotype-leakage framing not foregrounded.
 - **This is the comparator the plan must name and differentiate against.** The plan currently doesn't
   mention it at all.
 
@@ -226,7 +226,7 @@ note where it would break (if scope expands to pan-sarcoma or spatial). Converse
 4. **Re-identification-aware release engineering.** A first-class, documented stance on genotype leakage
    from count matrices — redistributing aggregated/derived layers, not raw matrices — that *no* existing
    atlas foregrounds. This is both a safety contribution and a differentiator.
-5. **Machine-readable per-source license + per-assertion provenance** (Elyos's model) — stronger and more
+5. **Machine-readable per-source license + per-assertion provenance** (Hee-Lee Oss's model) — stronger and more
    auditable than 3CA's manual curation or ScPCA's pipeline-level provenance.
 6. **An honest "what's covered / what's missing" coverage ledger** for a rare cancer — the field has
    nothing like it for Ewing.

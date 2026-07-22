@@ -26,7 +26,7 @@
     "Referenced from README/CONTRIBUTING as the binding compliance policy."
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md (refusal guardrails)"
+    "C:/code/hee-lee-oss/CLAUDE.md (refusal guardrails)"
   ],
   "output": "/output/COMPLIANCE.md (refusal/guardrail + exclude-list policy)",
   "requestor": "TBD",

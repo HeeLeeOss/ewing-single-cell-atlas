@@ -26,7 +26,7 @@
     "No secrets/API keys committed; commit signed off per DCO."
   ],
   "resources": [
-    "C:/code/elyos/CLAUDE.md (funded lane: runner, API key, hard budget cap)",
+    "C:/code/hee-lee-oss/CLAUDE.md (funded lane: runner, API key, hard budget cap)",
     "PLAN.md (funded-lane backlog)"
   ],
   "output": "A pull request adding the optional metered, budget-capped funded-lane reanalysis path.",
